@@ -1,0 +1,13 @@
+library(readxl)
+library(forecast)
+library(nortest)
+library(tseries)
+library(ggplot2)
+library(lmtest)
+library(car)
+library(MASS)
+FAST_JK_mingguan <- read_excel("C:/Users/Adi Laksana/Downloads/PR untuk di cek/FAST.JK mingguan.xlsx")
+datats<-ts(juni$juni, frequency = 7)
+
+plot(datats)
+auto.arima(datats)

@@ -1,0 +1,5 @@
+library(readxl)
+probit2<-read_excel("D:/data.xlsx")
+View(probit2)
+modelprobit1<-glm(Y~X1+X2+X3+X4+X5+X6+X7,data=probit2,family=binomial(link="probit"))
+summary(modelprobit1)
